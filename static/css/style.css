@@ -44,6 +44,13 @@ a:hover, a:focus {
 li{
 	list-style: none;
 }
+
+.flecha-detalle{
+    font-size: 65px !important;
+    position: relative;
+    top: -14px;
+}
+
 .volver {
     float: left !important;
     background: rgba(0, 0, 0, 0.24) !important;
