@@ -39,7 +39,7 @@ String.prototype.replaceAll = function(search, replacement) {
     return target.split(search).join(replacement);
 };
 
-$(document).ready(function() 
+$(document).ready(function()
 {
     var params = getIncludeParameters();
     var tag = '';
@@ -68,20 +68,20 @@ $(document).ready(function()
           'https://lpcheckout.ondev.today',
           'https://lpcheckout.ondev.today',
           'https://pay.loadingplay.com');
-      var app_public = $.environmentVar(48,48,48);
+      var app_public = $.environmentVar('luttyflores','luttyflores','luttyflores');
         var site_name = $.environmentVar('luttyflores', 'luttyflores', 'luttyflores');
 
     var config = {
         'app_public': app_public,
         'base_url': base_url,
-        'products_per_page' : 9, 
+        'products_per_page' : 9,
         'tag': tag,
         'ignore_stock': false,
         'infinite_scroll': false,
         // 'maxProducts': 100,
-        'checkout_url': checkout_url, 
+        'checkout_url': checkout_url,
         'operator' :'or',
-        'onLoad': function(products) 
+        'onLoad': function(products)
         {
             console.log(products);
             // if (products.length === 0)
@@ -110,7 +110,7 @@ $(document).ready(function()
         // }
         config.tag=$(this).attr('tag');
         // console.log(config);
-        
+
         // facade.page = 1; // o 1 no estoy seguro
         $(".products").html("");
         $(document).ecommerce('destroy');
