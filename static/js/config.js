@@ -4,7 +4,7 @@
 /* global document */
 /* export config */
 'use strict';
-    
+
        var base_url = $.environmentVar(
           'https://apibodegas.ondev.today/',
           'https://apibodegas.ondev.today/',
@@ -13,5 +13,5 @@
           'https://lpcheckout.ondev.today',
           'https://lpcheckout.ondev.today',
           'https://pay.loadingplay.com');
-      var app_public = $.environmentVar(48,48,48);
+      var app_public = $.environmentVar('luttyflores','luttyflores','luttyflores');
         var site_name = $.environmentVar('luttyflores', 'luttyflores', 'luttyflores');
